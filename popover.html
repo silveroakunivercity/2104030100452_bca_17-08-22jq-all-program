@@ -1,0 +1,39 @@
+
+
+<html>
+    <head>
+        <title>PopOverModel</title>
+        <meta charset = "utf-8">
+      <title>POP OVER</title>
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet" type="text/css">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js" type="text/javascript"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js" type="text/javascript"></script>
+      <style type="text/css">
+        .ui-widget-header,.ui-state-default, ui-button {
+            background:hotpink;
+            border: 1px solid gold;
+            color: lightgreen;
+            font-weight: bold;
+         }
+      </style> 
+        <script type = "text/javascript">
+            $(document).ready(function(){
+                $("#d1").dialog({
+                    autoOpen: false,
+                 });
+                $("#d2").click(function () {
+                    $("#d1").dialog("open");
+                });
+            });
+        </script>
+    </head>
+    <body style="background-color: lightblue;">
+        <div id="d1" title="web...">
+           <a href="https://www.google.com" target="_blank">GOOGLE:</a><hr><br>
+           <a href="https://www.youtube.com" target="_blank">YOU TUBE:</a><hr><br>
+           <a href="https://www.github.com" target="_blank">GITHUB:</a>
+        
+        </div>
+        <button id = "d2">Click Here...</button>
+    </body>
+</html>
